@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-Widget buildButton(String buttonText, Color buttonColor, void Function(String) onPressed, {IconData? icon}) {
+Widget buildButton(BuildContext context, String buttonText, Color buttonColor, void Function(String) onPressed, {IconData? icon}) {
   return Expanded(
     child: Container(
-      height: 80,
+      height: MediaQuery.of(context).size.height*.096,
       margin: EdgeInsets.all(5.0),
       decoration: BoxDecoration(
         gradient: LinearGradient(
